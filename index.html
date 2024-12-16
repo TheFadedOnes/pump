@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pump Fun API Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#features">API Features</a></li>
+        <li><a href="#queries">Queries</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Pump Fun API Explorer</h1>
+  </header>
+
+  <!-- Introduction Section -->
+  <section id="intro">
+    <h2>Welcome to Pump Fun API Explorer</h2>
+    <p>
+      Use this interface to explore and interact with Pump Fun API. Execute queries, fetch real-time data, and view results directly in your browser.
+    </p>
+    <p>
+      <a href="https://example.com/moonshot-docs" target="_blank">Moonshot API Documentation</a>
+    </p>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <h2>API Features</h2>
+    <ul>
+      <li>Real-time data streaming via Kafka.</li>
+      <li>Track token creation, trades, and holders.</li>
+      <li>Advanced queries for token analytics (OHLC data, trading volume, etc.).</li>
+    </ul>
+    <p>
+      Interested in Kafka streams? <a href="https://example.com/kafka-form" target="_blank">Fill out this form</a> and our team will reach out.
+    </p>
+  </section>
+
+  <!-- Queries Section -->
+  <section id="queries">
+    <h2>Available Queries</h2>
+
+    <!-- Query 1 -->
+    <article>
+      <h3>Top Pump Fun Tokens by Marketcap</h3>
+      <p>Get tokens ranked by marketcap. Formula: <code>Marketcap = Price * 1 billion</code>.</p>
+      <button onclick="runQuery('topTokensQuery')">Run Query</button>
+    </article>
+
+    <!-- Query 2 -->
+    <article>
+      <h3>Pump Fun Trades in Real-Time</h3>
+      <p>Get real-time trades with detailed transaction and token data.</p>
+      <button onclick="runQuery('realTimeTradesQuery')">Run Query</button>
+    </article>
+
+    <!-- Query 3 -->
+    <article>
+      <h3>Get Buy/Sell Volume of a Specific Token</h3>
+      <p>Fetch essential stats for a token (last 5 mins, 1 hour).</p>
+      <button onclick="runQuery('tokenVolumeQuery')">Run Query</button>
+    </article>
+  </section>
+
+  <!-- Results Section -->
+  <section id="results">
+    <h2>Query Results</h2>
+    <pre id="queryResults">
+      <!-- Results will be dynamically inserted here -->
+    </pre>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or need support? Reach out on <a href="https://t.me/example" target="_blank">Telegram</a>.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Pump Fun API. All rights reserved.</p>
+  </footer>
+
+  <!-- Include Prism.js for syntax highlighting -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
